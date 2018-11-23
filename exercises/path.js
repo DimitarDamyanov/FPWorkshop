@@ -1,6 +1,6 @@
 const R = require('ramda');
 /**
-    1. Implement a function getUserFirstName which is receiving user object and it is returning the first name of the user.
+    1. Function getFirstName should return the first name of user.
     2. Modify the function to return 'Ivan' if the user object does not contain name.
 
     Hint: check the path and pathOr functions in Ramda.js
@@ -15,8 +15,6 @@ const R = require('ramda');
     }
  */
 
-const getUserFirstName =  R.path(['profile', 'name', 'first']);
+const getFirstName = () => {};
 
-
-exports.getUserFirstName = getUserFirstName;
- q
+exports.getFirstName = getFirstName;

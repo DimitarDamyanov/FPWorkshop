@@ -1,7 +1,7 @@
-import { getUserFirstName } from '../exercises/path'
+import { getFirstName } from '../exercises/path'
 
 describe('path module suite', () => {
-    test('should return the first name of the user', () => {
+    test('1. should return the first name of the user', () => {
         const firstName = 'Gosho';
         const user = {
             profile: {
@@ -10,15 +10,15 @@ describe('path module suite', () => {
                 }
             }
         };
-        expect(getUserFirstName(user)).toBe(firstName);
+        expect(getFirstName(user)).toBe(firstName);
     });
 
-    test('should return "Ivan" if the user does not have first name', () => {
+    test('2. should return "Ivan" if the user does not have first name', () => {
         const user = {
             profile: {
                 name: {}
             }
         };
-        expect(getUserFirstName(user)).toBe('Ivan')
+        expect(getFirstName(user)).toBe('Ivan')
     });
 });
