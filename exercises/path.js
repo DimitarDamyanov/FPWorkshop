@@ -17,4 +17,4 @@ const R = require('ramda');
 
 const getFirstName = () => {};
 
-exports.getFirstName = getFirstName;
+export { getFirstName };

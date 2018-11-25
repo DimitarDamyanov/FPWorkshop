@@ -36,6 +36,4 @@ const toggleEnvironment = () => {};
 const enableEnvironment = () => {};
 const enableProduction  = () => {};
 
-exports.enableProduction = enableProduction;
-exports.enableEnvironment = enableEnvironment;
-exports.toggleEnvironment = toggleEnvironment;
+export { toggleEnvironment, enableEnvironment, enableProduction};
